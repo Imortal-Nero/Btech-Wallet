@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>BTech Wallet</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../Styles/transactionhistory.css" />
+</head>
+<body>
+  <div class="header">
+    <a href="admin_homepage.html" class="logo text-decoration-none">
+      <i class="fas fa-wallet" aria-hidden="true"></i>
+      <span>BTech Wallet</span>
+    </a>
+  </div>
+  
+  <button
+    id="darkModeToggle"
+    style="position:absolute; top:15px; right:15px; padding:6px 12px; border:none; border-radius:5px; background-color: var(--primary); color: var(--white); cursor:pointer; font-weight:600;"
+  >
+    Dark Mode
+  </button>
+
+  <main>
+    <div class="history-container container my-4">
+      <div class="history-title mb-3 fs-4 fw-bold">Transaction History</div>
+
+      <!-- Filters Section -->
+      <div class="filters mb-3 d-flex flex-wrap gap-2 align-items-center">
+        <input type="text" id="filterUsername" class="form-control form-control-sm" placeholder="Filter by Username" style="max-width: 180px;" />
+        <input type="text" id="filterEmail" class="form-control form-control-sm" placeholder="Filter by Email" style="max-width: 220px;" />
+        <select id="filterType" class="form-select form-select-sm" style="max-width: 140px;">
+          <option value="">All Types</option>
+          <option value="Sent">Sent</option>
+          <option value="Received">Received</option>
+        </select>
+        <input type="number" id="filterMinAmount" class="form-control form-control-sm" placeholder="Min Amount" style="max-width: 120px;" />
+        <input type="number" id="filterMaxAmount" class="form-control form-control-sm" placeholder="Max Amount" style="max-width: 120px;" />
+        <button id="filterBtn" class="btn btn-primary btn-sm">Filter</button>
+        <button id="clearFilterBtn" class="btn btn-secondary btn-sm">Clear</button>
+      </div>
+
+      <div class="action-buttons mb-3">
+        <a href="admin_checkbalance.html" class="action-btn btn btn-outline-primary btn-sm me-2">
+          <i class="bi bi-wallet2"></i> Balance
+        </a>
+        <a href="admin_homepage.html" class="action-btn btn btn-outline-primary btn-sm me-2">
+          <i class="bi bi-house-door"></i> Home
+        </a>
+        <a href="admin_transfer.html" class="action-btn btn btn-outline-primary btn-sm">
+          <i class="bi bi-send"></i> Transfer
+        </a>
+      </div>
+
+      <div class="table-responsive">
+        <table class="table table-bordered table-striped align-middle">
+          <thead class="table-light">
+            <tr>
+              <th>Name</th>
+              <th>Email ID</th>
+              <th>Amount Transferred</th>
+              <th>Type</th>
+            </tr>
+          </thead>
+          <tbody id="transactionTableBody">
+            <!-- Transactions will be loaded here -->
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </main>
+
+  <div class="footer text-center mt-5 py-3 bg-light">
+    <p class="flogo mb-1">
+      <i class="fas fa-wallet"></i>
+      <span>BTech Wallet will always support you</span>
+    </p>
+    <p class="mb-0">
+      Contact us: <a href="mailto:starqq127@gmail.com">starqq125@gmail.com</a> | Phone: +1 (555) 123-4567
+    </p>
+    <p>
+      Customer Care: <a href="mailto:starqq125@gmail.com">starqq125@gmail.com</a>
+    </p>
+  </div>
+
+  <script src="js/userstransactionhistory.js"></script>
+
+</body>
+</html>

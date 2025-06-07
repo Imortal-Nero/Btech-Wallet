@@ -1,0 +1,219 @@
+
+    :root {
+      --primary: #6c5ce7;
+      --secondary: #a29bfe;
+      --dark: #2d3436;
+      --light: #f5f6fa;
+      --gray: hsl(196, 7%, 42%);
+      --white: #ffffff;
+    }
+    html,
+    body {
+      height: 100%;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      font-family: "Poppins", sans-serif;
+      background-color: var(--light);
+    }
+    main {
+      flex: 1;
+    }
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    .header {
+      background-color: var(--secondary);
+      color: var(--dark);
+      padding: 20px;
+      text-align: center;
+    }
+    .logo {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      font-size: 24px;
+      font-weight: 700;
+      color: var(--primary);
+    }
+    .logo i {
+      font-size: 28px;
+    }
+    .custom-navbar {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      background-color: var(--primary);
+      border-radius: 50%;
+      width: 50px;
+      height: 50px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      z-index: 1000;
+    }
+    .nav-icon {
+      color: var(--white);
+      font-size: 24px;
+      display: inline-block;
+      text-align: center;
+      text-decoration: none;
+    }
+    .history-container {
+      max-width: 960px;
+      margin: 30px auto;
+      padding: 20px;
+      background-color: var(--white);
+      border-radius: 15px;
+      box-shadow: 0 10px 30px rgba(108, 92, 231, 0.1);
+    }
+    .history-title {
+      text-align: center;
+      margin-bottom: 20px;
+      color: var(--primary);
+      font-size: 28px;
+      font-weight: bold;
+    }
+    .action-buttons {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      margin-bottom: 20px;
+    }
+    .action-btn {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      padding: 10px 20px;
+      background-color: var(--primary);
+      color: var(--white);
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: 600;
+      transition: all 0.3s;
+    }
+    .action-btn:hover {
+      background-color: var(--dark);
+      transform: translateY(-2px);
+    }
+    .table-responsive {
+      max-height: 400px;
+      overflow-y: auto;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    thead {
+      background-color: var(--primary);
+      color: var(--white);
+    }
+    tbody tr:nth-child(even) {
+      background-color: var(--light);
+    }
+    th,
+    td {
+      padding: 12px;
+      text-align: center;
+      border: 1px solid #ddd;
+    }
+    .footer {
+      background-color: var(--secondary);
+      color: var(--dark);
+      padding: 20px;
+      text-align: center;
+    }
+    .flogo {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      font-size: 20px;
+      font-weight: 700;
+      color: var(--primary);
+    }
+    @media (max-width: 768px) {
+      .custom-navbar {
+        top: 10px;
+        right: 10px;
+      }
+      .action-buttons {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+
+
+    
+body.dark {
+  background-color: #121217;
+  color: #ddd;
+}
+
+body.dark .header {
+  background-color: #3e3a8c;
+  color: #ddd;
+}
+
+body.dark .logo {
+  color: #9a8cff;
+}
+
+body.dark .custom-navbar {
+  background-color: #5a54d1;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.7);
+}
+
+body.dark .nav-icon {
+  color: #f0e9ff;
+}
+
+body.dark .history-container {
+  background-color: #1e1b3c;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.7);
+}
+
+body.dark .history-title {
+  color: #9a8cff;
+}
+
+body.dark .action-btn {
+  background-color: #5a54d1;
+  color: #eee;
+}
+
+body.dark .action-btn:hover {
+  background-color: #3e3a8c;
+}
+
+body.dark table {
+  border-color: #444;
+}
+
+body.dark thead {
+  background-color: #5a54d1;
+  color: #eee;
+}
+
+body.dark tbody tr:nth-child(even) {
+  background-color: #2a2765;
+}
+
+body.dark th,
+body.dark td {
+  border-color: #000000;
+  color: #000000;
+}
+
+body.dark .footer {
+  background-color: #3e3a8c;
+  color: #ddd;
+}
+
+body.dark .flogo {
+  color: #9a8cff;
+}

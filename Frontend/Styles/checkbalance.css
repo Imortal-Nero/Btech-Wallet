@@ -1,0 +1,201 @@
+:root {
+      --primary: #6c5ce7;
+      --secondary: #a29bfe;
+      --dark: #2d3436;
+      --light: #f5f6fa;
+      --white: #ffffff;
+    }
+    
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      background-color: var(--light);
+      color: var(--dark);
+    }
+    
+    .header {
+      background-color: var(--secondary);
+      color: var(--dark);
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+    
+    .logo {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      font-size: 24px;
+      font-weight: 700;
+      color: var(--primary);
+    }
+    
+    .main {
+      background-color: var(--primary);
+      color: var(--white);
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 40px 20px;
+      border-radius: 15px;
+      box-shadow: 0 10px 30px rgba(108, 92, 231, 0.3);
+      flex: 1;
+    }
+    
+    .welcome-title {
+      font-size: 28px;
+      margin-bottom: 30px;
+      font-weight: 700;
+    }
+    
+    .balance-info {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+    }
+    
+    .balance-container {
+      background: rgba(255, 255, 255, 0.1);
+      padding: 20px 30px;
+      border-radius: 12px;
+      margin-bottom: 20px;
+      width: 100%;
+      max-width: 500px;
+      backdrop-filter: blur(5px);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+    }
+    
+    .balance-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 15px;
+      font-size: 22px;
+      padding: 10px 0;
+    }
+    
+    #balanceAmount {
+      font-weight: 700;
+      min-width: 120px;
+      display: inline-block;
+      text-align: right;
+    }
+    
+    .btn-toggle {
+      background: transparent;
+      border: none;
+      color: var(--white);
+      cursor: pointer;
+      padding: 5px;
+      font-size: 1.2rem;
+      transition: all 0.2s;
+      border-radius: 50%;
+      width: 36px;
+      height: 36px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    
+    .btn-toggle:hover {
+      background: rgba(255, 255, 255, 0.2);
+      transform: scale(1.1);
+    }
+    
+    .btn-toggle:focus {
+      outline: none;
+      box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.3);
+    }
+    
+    .action-buttons {
+      width: 100%;
+      margin-top: 20px;
+    }
+    
+    .btn-group {
+      display: flex;
+      gap: 20px;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-bottom: 0; 
+    }
+    
+    .action-btn {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 14px 24px;
+      background-color: var(--white);
+      color: var(--primary);
+      text-decoration: none;
+      border-radius: 8px;
+      font-size: 16px;
+      font-weight: 600;
+      transition: all 0.3s ease;
+      min-width: 160px;
+      justify-content: center;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    
+    .action-btn:hover {
+      background-color: var(--dark);
+      color: var(--white);
+      transform: translateY(-3px);
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    }
+    
+    .footer {
+      background-color: var(--secondary);
+      color: var(--dark);
+      padding: 20px;
+      text-align: center;
+      margin-top: auto;
+    }
+    body.dark {
+  background-color: #121217;
+  color: #ddd;
+}
+
+body.dark .header {
+  background-color: #3e3a8c;
+  color: #ddd;
+}
+
+body.dark .logo {
+  color: #9a8cff;
+}
+
+body.dark .main {
+  background-color: #5a54d1;
+  color: #eee;
+  box-shadow: 0 10px 30px rgba(90, 84, 209, 0.5);
+}
+
+body.dark .balance-container {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(6px);
+}
+
+body.dark .btn-toggle {
+  color: #eee;
+}
+
+body.dark .action-btn {
+  background-color: #9a8cff;
+  color: #222;
+}
+
+body.dark .action-btn:hover {
+  background-color: #6c5ce7;
+  color: #fff;
+}
+
+body.dark .footer {
+  background-color: #3e3a8c;
+  color: #ddd;
+}
