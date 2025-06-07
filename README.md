@@ -37,6 +37,7 @@ A simple web-based user hierarchy bank management system.
     npm install express-session@^1.18.1
     npm install jsonwebtoken@^9.0.2
     npm install mysql2@^3.14.1
+    npm install nodemon
 4.  **Configure environment variables:**
   Create a .env file in the root directory and add your MySQL configuration:
     ```bash
