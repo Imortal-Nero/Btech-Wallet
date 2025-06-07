@@ -24,6 +24,7 @@ A simple web-based user hierarchy bank management system.
    cd Btech-Wallet
 2. **Initialize and install dependencies:**
    ```bash
+   npm init
    npm install
 3. **Need to install :**
     ```bash
@@ -44,8 +45,8 @@ A simple web-based user hierarchy bank management system.
     ```bash
     npm start
 6.  **Access the app in your browser:**
-```bash
-http://localhost:5000
+   ```bash
+   http://localhost:5000
  
 
 
