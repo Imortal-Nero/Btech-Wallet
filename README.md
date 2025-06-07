@@ -16,6 +16,10 @@ A simple web-based user hierarchy bank management system.
 - **Node.js** (v14 or higher)
 - **MySQL** server
 
+## Database
+
+- Run mysql.sql commands and create a databse
+
 ## Setup Instructions
 
 1. **Clone the repository:**
